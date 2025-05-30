@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Contact Form API");
 });
 
+app.get("/health", (request, response) => {
+  response.json({ message: "API is healthy" });
+});
+
 app.use("/V1", contactRouter);
 
 export default app;
