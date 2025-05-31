@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
-export default app
+export default app;
 
 if (process.env.NODE_ENV !== "production") {
   app.listen(PORT, () => {
